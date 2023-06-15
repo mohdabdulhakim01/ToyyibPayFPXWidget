@@ -5,15 +5,15 @@ require_once("ToyyibPayFPXWidget.php");
 Class FpxTest{
     public function run(){
         $payment = new ToyyibPayFPXWidget();
-        $payment->userSecretKey = 'vq9kup5t-0s8o-xb85-8734-n17emblhc5db';
+        $payment->userSecretKey = 'yourSecretKey';
         $payment->categoryCode = 'aa72byra';
         $payment->billName = 'Nama Produk '.rand();
         $payment->billDescription = 'Deskripsi Produk';
         $payment->billPriceSetting = 0;
         $payment->billPayorInfo = 1;
         $payment->billAmount = 100;
-        $payment->billReturnUrl = 'http://localhost/testbeli/payment_hook.php';
-        $payment->billCallbackUrl = 'http://localhost/testbeli/payment_callback.php';
+        $payment->billReturnUrl = 'http://localhost/website/payment_hook.php';
+        $payment->billCallbackUrl = 'http://localhost/website/payment_callback.php';
         $payment->billExternalReferenceNo = time().rand();
         $payment->billTo = 'Mohammad Abdul Hakim';
         $payment->billEmail = 'mohdabdulhakim01@gmail.com';
