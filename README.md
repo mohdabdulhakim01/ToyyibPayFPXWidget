@@ -1,4 +1,4 @@
-ToyyibPay FPX Widget Generator
+# ToyyibPay FPX Widget Generator
 - this widget is used to generate your own custom widget and doesn't depend on the toyyibpay gateway page to proceed to desired customer bank.
 - usually client/customer need to go through fixed toyyibpay billing page which is www.toyyibpay.com/billcode . 
 - but with this widget you can embed only required element such as bank option and payment button to your own checkout page .
