@@ -6,3 +6,5 @@
 - the widget can be customise by changing the widget.html file or create your own html widget to fit your need. other thing such as final transaction or system flow does not change. You still able to see the payment status on your toyyibpay account based on bill.
 - this widget does not break any rule of the toyyibpay since it just using the api itself without any changes to the transactional flow.
 -  I do not responsible for any consequence before/current/after using this widget for any activities.
+
+- No extra library required. just ready to rock and roll !!!
