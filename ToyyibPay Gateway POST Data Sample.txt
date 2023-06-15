@@ -1,0 +1,25 @@
+payment_amount: 1.00
+payment_harga: 0
+packageRate: 
+packageRange: 
+UserPackage: 1
+PriceSetting: 0
+PaymentCharge: 
+ChargeToCustomer: 0
+totalAfterCharges: 
+payment_ref_no: 1111111
+payment_description: description
+name: Mohammad Abdul Hakim
+email: mohdabdulhakim01@gmail.com
+phone: 011111111
+billID: 111111
+billPermalink: 111111
+SingleBill: 
+LastAttempt: 
+bankID: 
+channel: 01
+web_return_address: https://dev.toyyibpay.com/index.php/bill/webreturn/1111111
+private_key: 111111
+billASPCode: 
+fpxfee: 1.00
+bank: TEST0021
