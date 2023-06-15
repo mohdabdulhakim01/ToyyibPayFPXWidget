@@ -6,7 +6,7 @@ Class FpxTest{
     public function run(){
         $payment = new ToyyibPayFPXWidget();
         $payment->userSecretKey = 'yourSecretKey';
-        $payment->categoryCode = 'aa72byra';
+        $payment->categoryCode = 'category_code';
         $payment->billName = 'Nama Produk '.rand();
         $payment->billDescription = 'Deskripsi Produk';
         $payment->billPriceSetting = 0;
