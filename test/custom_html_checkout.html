@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <h4>Checkout Page</h4>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis quo cumque ad error libero, tenetur dicta illo
+        veritatis nesciunt culpa sapiente, adipisci possimus minima, fugit distinctio iusto ipsa voluptate molestias.
+    </p>
+    [some payment data]
+    <div id="payment_widget" style="border:2px solid black;padding:3px">
+
+    </div>
+</body>
+<script>
+    const params = new URLSearchParams(window.location.search);
+
+    // Get the value of a specific parameter
+    // const billCode = params.get('billCode');
+    // fetch('http://localhost/testbeli/generate-widget.php?billCode='+billCode)
+    fetch('http://localhost/testbeli/generate-widget.php')
+        .then(response => response.text())
+        .then(data => {
+            // Store the data in a variable
+            document.getElementById('payment_widget').innerHTML = data;
+
+        })
+        .catch(error => {
+            // Handle any errors that occurred during the fetch
+            console.error('Error:', error);
+        });
+    //fetch()
+</script>
+
+</html>
